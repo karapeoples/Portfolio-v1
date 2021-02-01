@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Sidenav } from 'rsuite';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+			<section className='body'>
+				<div className='app'>
+					<h1>Kara R. Peoples</h1>
+        <p>Full Stack Web Developer</p>
+				</div>
+
+			</section>
+		);
 }
 
 export default App;
