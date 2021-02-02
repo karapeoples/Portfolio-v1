@@ -18,5 +18,121 @@ h1,h2,h3,h4,h5,h6{
   font-family: var(--sub);
   color: var(--dark);
 }
+/* NAVIGATION CSS */
+.logo{
+  height: 8rem;
+  width: 8rem;
+}
+.nav-menu{
+  background: var(--ecru);
+}
+.nav-item{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  text-decoration: underline overline;
+  color: var(--dark)
+}
+.link{
+  color: var(--dark);
+}
+.link:hover{
+  color:var(--ecru);
+  background: var(--dark);
+}
+
+/* LANDING PAGE CSS */
+
+.coverPage {
+  margin-left: -50%;
+  border-radius: 2rem;
+  border: .5rem solid var(--ecru);
+}
+
+.landWrapper {
+  margin-top: 10%;
+
+}
+
+.design {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: auto;
+  margin-top: 100px;
+}
+
+.design > *,
+.blend > * {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.rotatedBorder {
+	border: 15px var(--dark) solid;
+	transform: rotate(45deg);
+  box-shadow: 0 0 10px var(--dark), inset 0 0 20px var(--dark);
+  border-radius: 2rem;
+}
 
 
+.grid {
+	display: grid;
+	grid: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+[data-white] {
+  background-color: white;
+}
+
+.blend {
+	mix-blend-mode: multiply;
+}
+
+.coverPage {
+	object-fit: cover;
+}
+
+.design > .coverPage {
+  box-shadow: 0 0 20px var(--ecru);
+}
+/*  FOOTER CSS */
+.footer{
+  min-height: 10vh;
+}
+/* RESUME CSS */
+.resume-img{
+  border: 1px solid var(--dark);
+  margin: 1rem auto;
+  width: 50rem;
+}
+@media only screen and (max-width: 800px){
+  .resume-img{
+    width: 30rem;
+  }
+}
+@media only screen and (max-width: 550px){
+  .nav-bar{
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+  }
+  .logo{
+    margin-left: 2rem;
+  }
+  .design{
+    width: 10rem;
+    height: 10rem;
+    margin: 3rem auto;
+  }
+  .resume-img{
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .resume-img{
+    width: 15rem;
+  }
+}
