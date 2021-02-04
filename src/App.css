@@ -138,6 +138,8 @@ h1,h2,h3,h4,h5,h6{
   height: 3rem;
   display: block;
   margin: 0 auto;
+  background: var(--dark);
+  color: var(--ecru);
 }
 .copyright{
   color: var(--ecru);
@@ -180,7 +182,7 @@ iframe{
 .sc-btn{
   width: 10rem;
   margin: 0 auto;
-  background: var(--dark);
+  background: var(--ecru);
   color: var(--dark);
   font-family: var(--head);
   font-size: .75rem;
