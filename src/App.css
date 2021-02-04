@@ -180,7 +180,7 @@ iframe{
 .sc-btn{
   width: 10rem;
   margin: 0 auto;
-  background: var(--ecru);
+  background: var(--dark);
   color: var(--dark);
   font-family: var(--head);
   font-size: .75rem;
