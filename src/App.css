@@ -138,6 +138,7 @@ h1,h2,h3,h4,h5,h6{
   height: 3rem;
   display: block;
   margin: 0 auto;
+  filter: drop-shadow(2px 6px 8px var(--ecru))
 }
 .copyright{
   color: var(--ecru);
