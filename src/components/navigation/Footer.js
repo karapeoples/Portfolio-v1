@@ -45,13 +45,13 @@ const Footer = () => {
 					<Nav className='c-nav-footer'>
 						<div className='contact'>
 							<Button target='_blank' rel='noopener noreferrer' className='c-btn' href={twitter}>
-								<img src='https://img.icons8.com/carbon-copy/100/000000/twitter--v1.png' alt='twitter' /> Twitter
+								<img src='https://img.icons8.com/ios/50/000000/twitter--v3.png' alt='twitter' /> Twitter
 							</Button>
 							<Button target='_blank' rel='noopener noreferrer' className='c-btn' href={linkedIn}>
-								<img src='https://img.icons8.com/carbon-copy/100/000000/linkedin.png' alt='linkedIn' /> LinkedIn
+								<img src='https://img.icons8.com/fluent-systems-regular/50/000000/linkedin.png' alt='linkedIn' /> LinkedIn
 							</Button>
 							<Button onClick={toggle} className='c-btn'>
-								<img src='https://img.icons8.com/wired/64/000000/email.png' alt='email' /> Email Me
+								<img src='https://img.icons8.com/carbon-copy/100/000000/email.png' alt='email'/> Email Me
 							</Button>
 						</div>
 						<div>
@@ -62,23 +62,24 @@ const Footer = () => {
 				<Modal isOpen={modal}>
 					<ModalHeader toggle={toggle}>Contact Me</ModalHeader>
 					<ModalBody>
-					<form id='contact-form' onSubmit={handleSubmit}>
-					<label>Name</label>
-					<input placeholder='Name' type='text' name='from_name' onChange={handleChange} value={text.from_name} />
-					<br />
-					<label>Email</label>
-					<input placeholder='Email..' type='email' name='user_email' onChange={handleChange} value={text.user_email} />
-					<br />
-					<label>Message</label>
-					<textarea placeholder='Write me a Note...' type='text' name='message' onChange={handleChange} value={text.message} />
-						<Button className='s-btn'>
-							Send
-						</Button>
-				</form>
+						<form id='contact-form' onSubmit={handleSubmit}>
+							<label>Name</label>
+							<input placeholder='Name' type='text' name='from_name' onChange={handleChange} value={text.from_name} />
+							<br />
+							<label>Email</label>
+							<input placeholder='Email..' type='email' name='user_email' onChange={handleChange} value={text.user_email} />
+							<br />
+							<label>Message</label>
+							<textarea
+								placeholder='Write me a Note...'
+								type='text'
+								name='message'
+								onChange={handleChange}
+								value={text.message}
+							/>
+							<Button className='s-btn'>Send</Button>
+						</form>
 					</ModalBody>
-
-
-
 				</Modal>
 			</div>
 		);
