@@ -37,8 +37,6 @@ const toggleNavbar = () => setCollapsed(!collapsed);
 					<Nav className='nav-item'>
 							<Link to='/about' className='link'>About</Link>
 							<Link to='/projects' className='link'>Showcase</Link>
-							<Link to='/resume' className='link'>Resume</Link>
-
 					</Nav>
 				</Collapse>
 			</div>

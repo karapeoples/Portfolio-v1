@@ -20,7 +20,7 @@ const Footer = () => {
 			e.preventDefault();
 			text !== bodyObj
 				? emailjs
-						.send('kara_contact', apiKeys.TEMPLATE_ID, text, apiKeys.USER_ID)
+						.send(apiKeys.SERVICE, apiKeys.TEMPLATE_ID, text, apiKeys.USER_ID)
 						.then((res) => {
 							console.log('SUCCESS!', res.status, res.text);
 						})
@@ -37,7 +37,7 @@ const Footer = () => {
 		const handleChange = (e) => {
 			setText({ ...text, [e.target.name]: e.target.value });
     };
-      const twitter = 'https://twitter.com/SpookRazorII';
+      const twitter = 'https://twitter.com/KaraPeoples_Dev';
 			const linkedIn = 'https://www.linkedin.com/in/karapeoples1978';
   return (
 			<div>

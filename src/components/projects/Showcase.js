@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Col, Row, Button, CardBody } from 'reactstrap';
+import { Card, Col, Row, Button, CardBody, Alert } from 'reactstrap';
 
 
 
@@ -8,11 +8,17 @@ import { Card, Col, Row, Button, CardBody } from 'reactstrap';
 
 const Showcase = () => {
 	return (
-		<div>
+		<div className="project-btn">
 			<h1>Projects</h1>
 			<Button target='_blank' rel='noopener noreferrer' href='https://codestats.net/users/kararpeoples'>
 				Code Stats
+			</Button >
+			<Button className="project-btn"target='_blank' rel='noopener noreferrer' href='https://docs.google.com/document/d/1saZNfU5pbsngdvptPidxZAhBZCH7RBgqX8xBomiCDRM'>
+				Resume
 			</Button>
+
+			<Alert color="danger">Sorry But the Project BackEnds are Broken Due to a Heroku Update
+			Working to Fix Them For Your Ease of Use</Alert>
 			<div>
 				<Row>
 					<Col lg='4' md='6' sm='12'>
