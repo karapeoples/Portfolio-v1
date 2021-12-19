@@ -1,5 +1,5 @@
 import React from 'react'
-import coverPage from '../images/Kara.JPG'
+import coverPage from '../images/Kara.jpg'
 
 const Landing = () => {
   return (
