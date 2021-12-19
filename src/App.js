@@ -5,7 +5,6 @@ import Footer from './components/navigation/Footer'
 import Landing from './components/portfolio/Landing';
 import Intro from './components/portfolio/Intro';
 import Showcase from './components/projects/Showcase'
-import Resume from './components/projects/Resume'
 import {Switch, Route} from 'react-router-dom'
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
 					<Route exact path='/' component={Landing} />
 					<Route path='/about' component={Intro} />
 					<Route path ='/projects' component={Showcase}/>
-					<Route path ='/resume' component={Resume}/>
 				</Switch>
 				<Footer />
 				</div>

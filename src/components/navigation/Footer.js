@@ -41,7 +41,7 @@ const Footer = () => {
 			const linkedIn = 'https://www.linkedin.com/in/karapeoples1978';
   return (
 			<div>
-				<Navbar color='dark'>
+				<Navbar className='nav-bar'>
 					<Nav className='c-nav-footer'>
 						<div className='contact'>
 							<Button target='_blank' rel='noopener noreferrer' className='c-btn' href={twitter}>
@@ -55,7 +55,7 @@ const Footer = () => {
 							</Button>
 						</div>
 						<div>
-							<h5 className='copyright'>©2021~~Kara R. Peoples </h5>
+							<h5 className='copyright'>©2022~~Kara R. Peoples </h5>
 						</div>
 					</Nav>
 				</Navbar>

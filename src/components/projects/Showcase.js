@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Col, Row, Button, CardBody, Alert } from 'reactstrap';
+import { Card, Col, Row, Button } from 'reactstrap';
 
 
 
@@ -8,94 +8,100 @@ import { Card, Col, Row, Button, CardBody, Alert } from 'reactstrap';
 
 const Showcase = () => {
 	return (
-		<div className="project-btn">
+		<div>
 			<h1>Projects</h1>
-			<Button target='_blank' rel='noopener noreferrer' href='https://codestats.net/users/kararpeoples'>
+			<Button className="project-btn" target='_blank' rel='noopener noreferrer' href='https://codestats.net/users/kararpeoples'>
 				Code Stats
 			</Button >
 			<Button className="project-btn"target='_blank' rel='noopener noreferrer' href='https://docs.google.com/document/d/1saZNfU5pbsngdvptPidxZAhBZCH7RBgqX8xBomiCDRM'>
 				Resume
 			</Button>
 
-			<Alert color="danger">Sorry But the Project BackEnds are Broken Due to a Heroku Update
-			Working to Fix Them For Your Ease of Use</Alert>
+
 			<div>
 				<Row>
-					<Col lg='4' md='6' sm='12'>
+					<Col lg='12'>
 						<div>
 							<Card className='sc-card'>
-								<CardBody>
-										<iframe className='sc-iframe' src='https://med-cabinet.netlify.com/' title='project snapshot' />
-									<p>I did the HTML/LESS Static Landing Page</p>
-								</CardBody>
+								<span className='sc-card-body'>
+									<iframe className='sc-iframe' src='https://med-cabinet.netlify.com/' title='project snapshot' scrolling="no" />
+									<div>
+									<h3>Med-Cabinet</h3>
+									<p>
+									Created Landing Page.
+									Responsible for linking React Portion to Landing Page.
+									Wrote HTML and CSS.
+									</p>
+									</div>
+								</span>
+								<span className='sc-card-btns'>
 								<Button className='sc-btn' target='_blank' rel='noopener noreferrer' href='https://med-cabinet.netlify.com/'>
-									Med-Cabinet
+									Site
 								</Button>
 								<Button className='sc-btn' target='_blank' rel='noopener noreferrer' href='https://github.com/med-cabinet'>
 									Repo
 								</Button>
+					        </span>
 							</Card>
 						</div>
-					</Col>
-					<Col lg='4' md='6' sm='12'>
 						<div>
 							<Card className='sc-card'>
-								<CardBody>
+								<span className='sc-card-body'>
 									<div className='showCase'>
-										<iframe src='https://elegant-aryabhata-cdd64e.netlify.com/index.html' title='project snapshot' />
+										<iframe src='https://front-end-schoolr.vercel.app/' title='project snapshot' scrolling="no" />
 									</div>
-									<p>I did all the work on the About Page</p>
-								</CardBody>
+									<div>
+                                    									<h3>"School'R"</h3>
+                                    									<p>
+                                    									Led the team remotely by delegating responsibilities by wants and strengths.
+                                                                        Led the team through concepts of Redux in order to deepen the teams understanding of core Redux capabilities and concepts.
+                                                                        Implemented, Planned, and Delegated UI/UX Design and Development in ReactStrap.
+                                                                        Translated  JS Logic in Rock, Paper, Scissors Game & Memory Game to React Logic  using Local State.
+                                                                        Implemented and Pair Programmed Flash Cards.
+                                    									</p>
+                                    									</div>
+								</span>
+								<span className='sc-card-btns'>
 								<Button
 									className='sc-btn'
 									target='_blank'
 									rel='noopener noreferrer'
-									href='https://elegant-aryabhata-cdd64e.netlify.com/index.html'>
-									Keep Savvy
+									href='https://front-end-schoolr.vercel.app/'>
+									Site
 								</Button>
 								<Button
 									className='sc-btn'
 									target='_blank'
 									rel='noopener noreferrer'
-									href='https://github.com/build-week-prisonerSkills'>
+									href='https://github.com/School-R/front-end'>
 									Repo
 								</Button>
+								</span>
 							</Card>
 						</div>
-					</Col>
-					<Col lg='4' md='6' sm='12'>
 						<div>
 							<Card className='sc-card'>
-								<CardBody>
+								<span className='sc-card-body'>
 									<div className='showCase'>
-										<iframe src='https://fishfriendsapp.netlify.com/' title='project snapshot' />
-										<p>Did the Fishing Spots API Call & Style for React</p>
+										<iframe src='https://goldentutors.netlify.com/' title='project snapshot' scrolling="no" />
 									</div>
-								</CardBody>
-								<Button className='sc-btn' target='_blank' rel='noopener noreferrer' href='https://fishfriendsapp.netlify.com/'>
-									Fish Friends
-								</Button>
-								<Button
-									className='sc-btn'
-									target='_blank'
-									rel='noopener noreferrer'
-									href='https://github.com/Fish-Friends-Build'>
-									Repo
-								</Button>
-							</Card>
-						</div>
-					</Col>
-					<Col lg='4' md='6' sm='12'>
-						<div>
-							<Card className='sc-card'>
-								<CardBody>
-									<div className='showCase'>
-										<iframe src='https://goldentutors.netlify.com/' title='project snapshot' />
-									</div>
-									<p>Advanced React and State Management</p>
-								</CardBody>
+									<div>
+                                    									<h3>Golden Tutors</h3>
+                                    									<p>
+                                    									Connected the back end through CRUD operations to create and accept three user types, including:
+                                    									<ul>
+                                                                        <li>A student user role, which can search for available tutors</li>
+                                                                        <li>A tutor user role, which can sign up as a volunteer and be assigned tasks by an administrator and alert the administrator of completed tasks</li>
+                                                                        <li>An administrator user role, which can assign tasks to tutors based on student needs and mark a task as complete and remove it or edit it and send it back to the tutor</li>
+                                                                        </ul>
+                                                                        Designed UX app layout using basic design principles and automatic navigation; implemented design based on thorough feedback from a stakeholder team.
+
+                                    									</p>
+                                    									</div>
+								</span>
+								<span className='sc-card-btns'>
 								<Button className='sc-btn' target='_blank' rel='noopener noreferrer' href='https://goldentutors.netlify.com/'>
-									Golden Tutors
+									Site
 								</Button>
 								<Button
 									className='sc-btn'
@@ -104,46 +110,32 @@ const Showcase = () => {
 									href='https://github.com/BW-SchoolInTheCloud1/FrontEnd'>
 									Repo
 								</Button>
+								</span>
 							</Card>
 						</div>
-					</Col>
-					<Col lg='4' md='6' sm='12'>
+
 						<div>
 							<Card className='sc-card'>
-								<CardBody>
+								<span className='sc-card-body'>
 									<div className='showCase'>
-										<iframe src='https://sfr-pearl.vercel.app/' title='project snapshot' />
+										<iframe src='https://optimistic-chandrasekhar-c6d265.netlify.app/' title='project snapshot' scrolling="no" />
 									</div>
-									<p>Advanced React and State Management</p>
-								</CardBody>
-								<Button className='sc-btn' target='_blank' rel='noopener noreferrer' href='https://sfr-pearl.vercel.app/'>
-									Secret Family Recipes
-								</Button>
-								<Button
-									className='sc-btn'
-									target='_blank'
-									rel='noopener noreferrer'
-									href='https://github.com/karapeoples/cherished-recipes-fe'>
-									Repo
-								</Button>
-							</Card>
-						</div>
-					</Col>
-					<Col lg='4' md='6' sm='12'>
-						<div>
-							<Card className='sc-card'>
-								<CardBody>
-									<div className='showCase'>
-										<iframe src='https://optimistic-chandrasekhar-c6d265.netlify.app/' title='project snapshot' />
-									</div>
-									<p>Consumed Data Science API and Built RestAPI</p>
-								</CardBody>
+									<div>
+                                    									<h3>Troll-Hub</h3>
+                                    									<p>
+                                    									Built Endpoints with NodeJS/KNEX.
+                                    									Consumed Data Science API.
+                                    									Wrote a Matching Table for Quotes to Save Favorite from Data Science API.
+                                    									</p>
+                                    									</div>
+								</span>
+								<span className='sc-card-btns'>
 								<Button
 									className='sc-btn'
 									target='_blank'
 									rel='noopener noreferrer'
 									href='https://optimistic-chandrasekhar-c6d265.netlify.app/'>
-									Troll Hub
+									Site
 								</Button>
 								<Button
 									className='sc-btn'
@@ -152,25 +144,7 @@ const Showcase = () => {
 									href='https://github.com/Build-Week-SaltiestHackerNewsTrolls2/back-end'>
 									Repo
 								</Button>
-							</Card>
-						</div>
-					</Col>
-					<Col lg='4' md='6' sm='12'>
-						<div>
-							<Card className='sc-card'>
-
-								<CardBody>
-									<div className='showCase'>
-										<iframe src='https://co-make.chitowncoder.vercel.app/' title='project snapshot' />
-									</div>
-									<p>Built RestAPI and Helped Guide React Portion</p>
-                </CardBody>
-                <Button className='sc-btn' target='_blank' rel='noopener noreferrer' href='https://co-make.chitowncoder.vercel.app/'>
-									Co-Make
-								</Button>
-								<Button className='sc-btn' target='_blank' rel='noopener noreferrer' href='https://github.com/karapeoples/be_cm'>
-									Repo
-								</Button>
+								</span>
 							</Card>
 						</div>
 					</Col>

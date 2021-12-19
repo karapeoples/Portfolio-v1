@@ -1,5 +1,5 @@
 import React from 'react'
-import coverPage from '../images/Kara.jpg'
+import coverPage from '../images/Kara.JPG'
 
 const Landing = () => {
   return (
@@ -18,7 +18,7 @@ const Landing = () => {
 					</div>
 
 					<div className='blend'>
-						<img src={coverPage} alt='tech' className='coverPage' />
+						<img src={coverPage} alt='portrait of Kara' className='coverPage' />
 						<div className='grid'>
 							<div></div>
 							<div data-white></div>

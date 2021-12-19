@@ -23,7 +23,7 @@ const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
 			<div>
-				<Navbar color='dark'className='nav-bar'>
+				<Navbar className='nav-bar'>
 					<NavbarBrand>
 						<Link to='/'>
 							<img src={logoLight} alt='logo' className='logo' />
