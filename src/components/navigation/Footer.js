@@ -38,7 +38,7 @@ const Footer = () => {
 			setText({ ...text, [e.target.name]: e.target.value });
     };
       const twitter = 'https://twitter.com/KaraPeoples_Dev';
-			const linkedIn = 'https://www.linkedin.com/in/karapeoples1978';
+			const linkedIn = 'https://www.linkedin.com/in/karapeoples/';
   return (
 			<div>
 				<Navbar className='nav-bar'>
