@@ -50,9 +50,9 @@ const Footer = () => {
 							<Button target='_blank' rel='noopener noreferrer' className='c-btn' href={linkedIn}>
 								<img src='https://img.icons8.com/fluent-systems-regular/50/000000/linkedin.png' alt='linkedIn' /> LinkedIn
 							</Button>
-							<Button onClick={toggle} className='c-btn'>
-								<img src='https://img.icons8.com/carbon-copy/100/000000/email.png' alt='email'/> Email Me
-							</Button>
+//							<Button onClick={toggle} className='c-btn'>
+//								<img src='https://img.icons8.com/carbon-copy/100/000000/email.png' alt='email'/> Email Me
+//							</Button>
 						</div>
 						<div>
 							<h5 className='copyright'>©2022~~Kara R. Peoples </h5>
