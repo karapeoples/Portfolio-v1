@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
-import { Navbar, Nav, Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
-import emailjs from 'emailjs-com';
-import apiKeys from './apiKeys';
+import React from 'react'
+import { Navbar, Nav, Button} from 'reactstrap';
+//import emailjs from 'emailjs-com';
+//import apiKeys from './apiKeys';
 
 const Footer = () => {
 //  const bodyObj = {
