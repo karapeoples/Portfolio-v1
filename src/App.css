@@ -180,7 +180,16 @@ h1,h2,h3,h4,h5,h6{
   padding-bottom: 1rem;
   border-radius: 2rem;
 }
+.sc-img-container{
+  width: 20rem;
+}
 
+.sc-image{
+  width: 100%;
+}
+.sc-image:nth-child(2){
+  margin: auto;
+}
 .sc-btn{
   width: 10rem;
   margin: 0 auto;

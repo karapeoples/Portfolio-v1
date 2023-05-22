@@ -1,9 +1,9 @@
 import React from 'react'
 import { Card, Col, Row, Button } from 'reactstrap';
-
-
-
-
+import medCabinet from '../images/Med-Cabinet.png';
+import goldenTutors from '../images/goldenTutors.png';
+import schoolR from '../images/schoolR.png';
+import trollHub from '../images/trollHubEndPoints.png';
 
 
 const Showcase = () => {
@@ -24,7 +24,11 @@ const Showcase = () => {
 						<div>
 							<Card className='sc-card'>
 								<span className='sc-card-body'>
-									<iframe className='sc-iframe' src='https://med-cabinet.netlify.com/' title='project snapshot' scrolling="no" />
+								<div className='showcase'>
+								 <div className='sc-img-container'>
+									<img className="sc-image" src={medCabinet} alt='Website Snapshot'/>
+								</div>
+								</div>
 									<div>
 									<h3>Med-Cabinet</h3>
 									<p>
@@ -48,7 +52,9 @@ const Showcase = () => {
 							<Card className='sc-card'>
 								<span className='sc-card-body'>
 									<div className='showCase'>
-										<iframe src='https://front-end-schoolr.vercel.app/' title='project snapshot' scrolling="no" />
+									<div className='sc-img-container'>
+										<img className="sc-image" src={schoolR} alt="Website Snapshot"/>
+									</div>
 									</div>
 									<div>
                                     									<h3>"School'R"</h3>
@@ -83,7 +89,9 @@ const Showcase = () => {
 							<Card className='sc-card'>
 								<span className='sc-card-body'>
 									<div className='showCase'>
-										<iframe src='https://goldentutors.netlify.com/' title='project snapshot' scrolling="no" />
+									<div className='sc-img-container'>
+										<img className="sc-image" src={goldenTutors} alt="Website Snapshot"/>
+									</div>
 									</div>
 									<div>
                                     									<h3>Golden Tutors</h3>
@@ -118,7 +126,9 @@ const Showcase = () => {
 							<Card className='sc-card'>
 								<span className='sc-card-body'>
 									<div className='showCase'>
-										<iframe src='https://optimistic-chandrasekhar-c6d265.netlify.app/' title='project snapshot' scrolling="no" />
+									<div className='sc-img-container'>
+										<img className="sc-image" src={trollHub} alt="Snapshot of EndPoints"/>
+									</div>
 									</div>
 									<div>
                                     									<h3>Troll-Hub</h3>
