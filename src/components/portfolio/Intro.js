@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Intro = () => {
 	return (
@@ -16,7 +15,7 @@ const Intro = () => {
 					skills.
 				</p>
 			</section>
-      <hr/>
+			<hr />
 			<section>
 				<p>
 					Crafting applies to my programming because it has taught me to have a keen eye and distinct attention for detail.
@@ -27,22 +26,19 @@ const Intro = () => {
 					<img src='https://img.icons8.com/ios/50/000000/knitting-ball.png' alt='yarn' />
 					<img src='https://img.icons8.com/ios/50/000000/art-book.png' alt='art book' />
 				</div>
-      </section>
-      <hr/>
+			</section>
+			<hr />
 			<section>
 				<div className='div-type1'>
 					<img src='https://img.icons8.com/wired/64/000000/lambda.png' alt='lambda' />
 					<img src='https://img.icons8.com/ios/50/000000/graduation-scroll.png' alt='diploma' />
 				</div>
 				<p className='p-type1'>
-					Honing my programming skills, with an education at Lambda School which provides much guided learning and project
-					apps that could become marketable someday. Please checkout my{' '}
-					<Link to='/projects' className='link'>
-						Showcase
-					</Link>{' '}
-					to see all my progress and projects.
+					I learned how to read, comprehend, and quickly adapt to new frameworks and tools, with an education from BloomTech (fka Lambda School) and training from GenSpark. To build on these comprehensions, I have started the path to my Bachelor's Degree in Computer Science. The first-step in this achievement is obtaining an AAS at Eastern Oklahoma State College in Software Development.
 				</p>
 			</section>
+			<p className='career-story'>Read the Full-Story Here:</p>
+			<a class="libutton" rel="noopener noreferrer" href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=6898716482310590464" target="_blank">Subscribe on LinkedIn</a>
 		</div>
 	);
 };

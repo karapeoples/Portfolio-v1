@@ -1,93 +1,114 @@
 import React from 'react'
-import { Card, Col, Row, Button } from 'reactstrap';
-import medCabinet from '../images/Med-Cabinet.png';
 import goldenTutors from '../images/goldenTutors.png';
 import schoolR from '../images/schoolR.png';
-import trollHub from '../images/trollHubEndPoints.png';
+import oppia from '../images/oppia.png';
+import { Card, CardHeader, CardBody, CardFooter, Image, SimpleGrid } from '@chakra-ui/react'
 
 
 const Showcase = () => {
 	return (
 		<div>
 			<h1>Projects</h1>
-			<Button className="project-btn" target='_blank' rel='noopener noreferrer' href='https://codestats.net/users/kararpeoples'>
-				Code Stats
-			</Button >
-			<Button className="project-btn"target='_blank' rel='noopener noreferrer' href='https://docs.google.com/document/d/1saZNfU5pbsngdvptPidxZAhBZCH7RBgqX8xBomiCDRM'>
-				Resume
-			</Button>
-
+			<div className='project-btns'>
+				<a className="project-btn" target='_blank' rel='noopener noreferrer' href='https://codestats.net/users/kararpeoples'>
+					Code Stats
+				</a >
+				<a className="project-btn" target='_blank' rel='noopener noreferrer' href='https://docs.google.com/document/d/1saZNfU5pbsngdvptPidxZAhBZCH7RBgqX8xBomiCDRM'>
+					Resume
+				</a>
+			</div>
 
 			<div>
-				<Row>
-					<Col lg='12'>
-						<div>
-							<Card className='sc-card'>
-								<span className='sc-card-body'>
-								<div className='showcase'>
-								 <div className='sc-img-container'>
-									<img className="sc-image" src={medCabinet} alt='Website Snapshot'/>
+				<div>
+				</div>
+				<div className='sc-section-body'>
+					<SimpleGrid columns={3} spacing={10} >
+						<Card maxW='lg' className='showcase'>
+							<span>
+								<div className='sc-img-container'>
+									<Image className="sc-image" src={schoolR} alt="Website Snapshot" />
 								</div>
-								</div>
-									<div>
-									<h3>Med-Cabinet</h3>
-									<p>
-									Created Landing Page.
-									Responsible for linking React Portion to Landing Page.
-									Wrote HTML and CSS.
+								<CardBody>
+									<CardHeader >
+										<h6>This was a School project</h6><br /><h3>"School'R"</h3></CardHeader>
+									<p className='sc-card-body'>
+										Led the team remotely by delegating responsibilities by wants and strengths.<br />
+										Led the team through concepts of Redux in order to deepen the teams understanding of core Redux capabilities and concepts.<br />
+										Implemented, Planned, and Delegated UI/UX Design and Development in ReactStrap.<br />
+										Translated  JS Logic in Rock, Paper, Scissors Game & Memory Game to React Logic  using Local State.<br />
 									</p>
-									</div>
-								</span>
-								<span className='sc-card-btns'>
-								<Button className='sc-btn' target='_blank' rel='noopener noreferrer' href='https://med-cabinet.netlify.com/'>
-									Site
-								</Button>
-								<Button className='sc-btn' target='_blank' rel='noopener noreferrer' href='https://github.com/med-cabinet'>
-									Repo
-								</Button>
-					        </span>
-							</Card>
-						</div>
-						<div>
-							<Card className='sc-card'>
-								<span className='sc-card-body'>
-									<div className='showCase'>
-									<div className='sc-img-container'>
-										<img className="sc-image" src={schoolR} alt="Website Snapshot"/>
-									</div>
-									</div>
-									<div>
-                                    									<h3>"School'R"</h3>
-                                    									<p>
-                                    									Led the team remotely by delegating responsibilities by wants and strengths.
-                                                                        Led the team through concepts of Redux in order to deepen the teams understanding of core Redux capabilities and concepts.
-                                                                        Implemented, Planned, and Delegated UI/UX Design and Development in ReactStrap.
-                                                                        Translated  JS Logic in Rock, Paper, Scissors Game & Memory Game to React Logic  using Local State.
-                                                                        Implemented and Pair Programmed Flash Cards.
-                                    									</p>
-                                    									</div>
-								</span>
-								<span className='sc-card-btns'>
-								<Button
+
+								</CardBody>
+							</span>
+							<CardFooter className='sc-section-btns'>
+								<a
 									className='sc-btn'
 									target='_blank'
 									rel='noopener noreferrer'
 									href='https://front-end-schoolr.vercel.app/'>
 									Site
-								</Button>
-								<Button
+								</a>
+								<a
 									className='sc-btn'
 									target='_blank'
 									rel='noopener noreferrer'
 									href='https://github.com/School-R/front-end'>
 									Repo
-								</Button>
-								</span>
-							</Card>
-						</div>
-						<div>
-							<Card className='sc-card'>
-								<span className='sc-card-body'>
+								</a>
+							</CardFooter>
+						</Card>
+
+						<Card maxW='lg' className='showcase'>
+							<span >
+								<div className='sc-img-container'>
+									<Image className="sc-image" src={oppia} alt="Website Snapshot" />
+								</div>
+								<CardBody>
+									<CardHeader >
+										<h6>Volunteer Project</h6><br /><h3>Oppia</h3></CardHeader>
+									<p className='sc-card-body'>
+										An open-source Education/Technology Website.<br />
+										Free Math Lessons for Everyone<br />
+										Angular and Python<br />
+										WSL2 and Virtual Machine Environment Exposure<br />
+										Blog writing to chronicle what I learn
+									</p>
+								</CardBody>
+							</span>
+							<CardFooter className='sc-section-btns'>
+								<a
+									className='sc-btn'
+									target='_blank'
+									rel='noopener noreferrer'
+									href='https://oppia.org'>
+									Site
+								</a>
+								<a
+									className='sc-btn'
+									target='_blank'
+									rel='noopener noreferrer'
+									href='https://github.com/karapeoples/oppia'>
+									Repo
+								</a>
+							</CardFooter>
+
+							<a class="libutton" rel='noopener noreferrer' href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7153949983069638656" target="_blank">Subscribe on LinkedIn</a>
+						</Card>
+					</SimpleGrid>
+					<div>
+					</div>
+
+					<div>
+					</div>
+				</div>
+			</div>
+		</div >
+	);
+};
+export default Showcase;
+
+{/* <section className='sc-section'>
+								<span className='sc-section-body'>
 									<div className='showCase'>
 									<div className='sc-img-container'>
 										<img className="sc-image" src={goldenTutors} alt="Website Snapshot"/>
@@ -107,60 +128,16 @@ const Showcase = () => {
                                     									</p>
                                     									</div>
 								</span>
-								<span className='sc-card-btns'>
-								<Button className='sc-btn' target='_blank' rel='noopener noreferrer' href='https://goldentutors.netlify.com/'>
+								<span className='sc-section-btns'>
+								<button className='sc-btn' target='_blank' rel='noopener noreferrer' href='https://goldentutors.netlify.com/'>
 									Site
-								</Button>
-								<Button
+								</button>
+								<button
 									className='sc-btn'
 									target='_blank'
 									rel='noopener noreferrer'
 									href='https://github.com/BW-SchoolInTheCloud1/FrontEnd'>
 									Repo
-								</Button>
+								</button>
 								</span>
-							</Card>
-						</div>
-
-						<div>
-							<Card className='sc-card'>
-								<span className='sc-card-body'>
-									<div className='showCase'>
-									<div className='sc-img-container'>
-										<img className="sc-image" src={trollHub} alt="Snapshot of EndPoints"/>
-									</div>
-									</div>
-									<div>
-                                    									<h3>Troll-Hub</h3>
-                                    									<p>
-                                    									Built Endpoints with NodeJS/KNEX.
-                                    									Consumed Data Science API.
-                                    									Wrote a Matching Table for Quotes to Save Favorite from Data Science API.
-                                    									</p>
-                                    									</div>
-								</span>
-								<span className='sc-card-btns'>
-								<Button
-									className='sc-btn'
-									target='_blank'
-									rel='noopener noreferrer'
-									href='https://optimistic-chandrasekhar-c6d265.netlify.app/'>
-									Site
-								</Button>
-								<Button
-									className='sc-btn'
-									target='_blank'
-									rel='noopener noreferrer'
-									href='https://github.com/Build-Week-SaltiestHackerNewsTrolls2/back-end'>
-									Repo
-								</Button>
-								</span>
-							</Card>
-						</div>
-					</Col>
-				</Row>
-			</div>
-		</div>
-	);
-};
-export default Showcase;
+							</section> */}

@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { ChakraProvider } from '@chakra-ui/react'
 import HeadNav from './components/navigation/HeadNav';
 import Footer from './components/navigation/Footer'
 import Landing from './components/portfolio/Landing';
@@ -9,6 +10,7 @@ import {Switch, Route} from 'react-router-dom'
 
 function App() {
   return (
+	<ChakraProvider>
 			<section className='body'>
 			<div className='app'>
 				<HeadNav />
@@ -21,6 +23,7 @@ function App() {
 				</div>
 
 			</section>
+		</ChakraProvider>
 		);
 }
 
